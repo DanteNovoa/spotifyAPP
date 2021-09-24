@@ -9,7 +9,11 @@ import { SearchComponent } from './components/search/search.component';
 import { ArtisstaComponent } from './components/artissta/artissta.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
-import { ROUTES } from './app.routes'
+import { ROUTES } from './app.routes';
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { SecurePipe } from './pipes/secure.pipe'
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { ROUTES } from './app.routes'
     HomeComponent,
     SearchComponent,
     ArtisstaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    TarjetasComponent,
+    LoadingComponent,
+    SecurePipe
   ],
   imports: [
     BrowserModule,
