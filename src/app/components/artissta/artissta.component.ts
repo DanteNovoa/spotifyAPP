@@ -31,9 +31,8 @@ export class ArtisstaComponent{
 
     this.spotify.getArtista( id )
         .subscribe(artista => {
-        console.log(artista, "linea 34");
+        console.log(artista, "este es el artista")
         this.artista = artista;
-        console.log(this.artista, "popularidad")
         this.loadingArtist = false;
         })
    }
